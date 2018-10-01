@@ -21,6 +21,7 @@ return callsArray
 }
 
 
+
 function longPlaneteerCalls(words) {
  for (let i=0; i < words.length; i++) {
   if (words[i].length > 4) { 
@@ -32,4 +33,12 @@ else {
 }}
 
 function findTheCheese (foods) {
+  var cheese = ["cheddar", "gouda", "camambert"]
+  for (let i=0; i < foods.length; i++) {
+    if (foods.includes(cheese[i])) { 
+      return (`${cheese[i]}`) }
+  else {
+       return "no cheese!" 
+      }
+  }
 }
