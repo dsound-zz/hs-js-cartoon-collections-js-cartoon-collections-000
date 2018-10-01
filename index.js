@@ -5,17 +5,19 @@ function dwarfRollCall(dwarves) {
 
    addDwarves.push(`${i + 1}. ${dwarves[i]} `)
 } 
+
  return addDwarves.join("") 
   
 } 
 
 function summonCaptainPlanet(planeteerCalls) {
- var upperCalls = [];
+ var callsArray = [];
 for (let i=0; i < planeteerCalls.length; i++) {
-  upperCalls.push(planteerCalls[i] + "! ").toUpperCase();
-} return upperCalls;
+  callsArray.push(planeteerCalls[i] + "! "); 
+  var upperCalls = callsArray.join(", ").toUpperCase()
+} return upperCalls
 
-}
+  }
 
 function longPlaneteerCalls(words) {
 }
